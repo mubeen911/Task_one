@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DC9F2EB3"
+
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="108dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/sobat"
+        app:layout_constraintBottom_toTopOf="@+id/line1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382" />
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="335dp"
+
+        android:layout_height="55dp"
+        android:layout_marginBottom="32dp"
+
+        android:background="@drawable/edit_rounded"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:layout_width="155dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/white"
+            android:text="Existing"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="155dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#D154E6"
+            android:text="New User"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="335dp"
+        android:layout_height="210dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/edit_rounded"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/e1"
+            android:layout_width="335dp"
+            android:layout_height="45dp"
+
+            android:drawableRight="@drawable/baseline_person_24"
+            android:hint="Username"
+            android:outlineAmbientShadowColor="@color/black"
+            android:paddingLeft="18dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="330dp" />
+
+        <EditText
+            android:id="@+id/e2"
+
+            android:layout_width="335dp"
+            android:layout_height="45dp"
+            android:drawableRight="@drawable/baseline_markunread_24"
+            android:hint="Email"
+            android:paddingLeft="18dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="396dp" />
+
+        <EditText
+            android:id="@+id/e3"
+            android:layout_width="335dp"
+            android:layout_height="45dp"
+            android:drawableRight="@drawable/baseline_password_24"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="18dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:layout_width="335dp"
+            android:layout_height="45dp"
+            android:drawableRight="@drawable/baseline_password_24"
+            android:hint=" Confirm Password"
+            android:inputType="textPassword"
+            android:paddingLeft="18dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="129dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="124dp"
+        android:text="Sign up"
+        android:background="@drawable/round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+       />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
